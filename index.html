@@ -10,19 +10,37 @@
   <body>
     <div id="app">
       <header class="bg-[--color-primary] py-4 sticky top-0">
-        <nav class="lg:container mx-auto px-12 flex items-center gap-8">
-          <h3 class="text-3xl font-semibold">E-Learning</h3>
-          <ul class="flex gap-6 mt-2">
+        <nav
+          class="lg:container mx-auto px-12 flex items-center gap-8 max-md:px-8 max-md:justify-between max-sm:px-6"
+        >
+          <h3 class="text-3xl font-semibold max-md:text-2xl">E-Learning</h3>
+          <ul class="flex gap-6 mt-2 max-md:hidden">
             <li><a class="text-lg text-slate-600" href="#">Home</a></li>
             <li><a class="text-lg text-slate-600" href="#">Deals</a></li>
             <li><a class="text-lg text-slate-600" href="#">About</a></li>
             <li><a class="text-lg text-slate-600" href="#">Register</a></li>
             <li><a class="text-lg text-slate-600" href="#">Success</a></li>
           </ul>
+
+          <div class="burger hidden flex-col gap-[6px] max-md:flex">
+            <div class="w-8 h-[3px] bg-slate-900"></div>
+            <div class="w-8 h-[3px] bg-slate-900"></div>
+            <div class="w-8 h-[3px] bg-slate-900"></div>
+          </div>
+
+          <ul
+            class="mobile-nav fixed w-full h-auto top-16 bg-[--color-primary-deep] left-0 p-10 flex flex-col gap-6"
+          >
+            <li><a class="text-lg text-slate-700" href="#">Home</a></li>
+            <li><a class="text-lg text-slate-700" href="#">Deals</a></li>
+            <li><a class="text-lg text-slate-700" href="#">About</a></li>
+            <li><a class="text-lg text-slate-700" href="#">Register</a></li>
+            <li><a class="text-lg text-slate-700" href="#">Success</a></li>
+          </ul>
         </nav>
       </header>
 
-      <main class="lg:container mx-auto my-10 px-12">
+      <main class="lg:container mx-auto my-10 px-12 max-md:px-8 max-sm:px-6">
         <!---------------------------- About ---------------------------->
         <section class="mb-12">
           <div
@@ -72,7 +90,7 @@
         </section>
 
         <!---------------------------- Courses ---------------------------->
-        <section class="px-12 mb-12">
+        <section class="px-12 mb-12 max-md:px-4">
           <div class="text-center mb-8">
             <h1 class="text-5xl font-medium mb-3 max-lg:text-4xl">
               Discover Our Popular Courses
@@ -87,9 +105,17 @@
 
           <!-- Course Cards -->
           <div class="grid grid-cols-2 gap-x-12 gap-8 max-lg:grid-cols-1">
-            <div class="flex items-center gap-8 border border-slate-300 pr-8">
-              <img src="./assets/course-1.png" alt="course-1" />
-              <div class="flex flex-col gap-4">
+            <div
+              class="flex items-center gap-8 border border-slate-300 pr-8 rounded max-sm:flex-col max-sm:p-0 max-sm:gap-4"
+            >
+              <img
+                src="./assets/course-1.png"
+                alt="course-1"
+                class="max-sm:w-full max-sm:h-52"
+              />
+              <div
+                class="flex flex-col gap-4 max-sm:gap-2 max-sm:pb-6 max-sm:px-4"
+              >
                 <h3 class="text-xl font-medium">Fundamental Of UI/UX Design</h3>
                 <p class="text-base">
                   E-Learning is one of the world's largest platforms for free
@@ -99,9 +125,17 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-8 border border-slate-300 pr-8">
-              <img src="./assets/course-2.png" alt="course-1" />
-              <div class="flex flex-col gap-4">
+            <div
+              class="flex items-center gap-8 border border-slate-300 pr-8 rounded max-sm:flex-col max-sm:p-0 max-sm:gap-4"
+            >
+              <img
+                src="./assets/course-2.png"
+                alt="course-1"
+                class="max-sm:w-full max-sm:h-52"
+              />
+              <div
+                class="flex flex-col gap-4 max-sm:gap-2 max-sm:pb-6 max-sm:px-4"
+              >
                 <h3 class="text-xl font-medium">
                   Javascript Basic to advanced
                 </h3>
@@ -113,9 +147,17 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-8 border border-slate-300 pr-8">
-              <img src="./assets/course-3.png" alt="course-1" />
-              <div class="flex flex-col gap-4">
+            <div
+              class="flex items-center gap-8 border border-slate-300 pr-8 rounded max-sm:flex-col max-sm:p-0 max-sm:gap-4"
+            >
+              <img
+                src="./assets/course-3.png"
+                alt="course-1"
+                class="max-sm:w-full max-sm:h-52"
+              />
+              <div
+                class="flex flex-col gap-4 max-sm:gap-2 max-sm:pb-6 max-sm:px-4"
+              >
                 <h3 class="text-xl font-medium">Fullstack Web Development</h3>
                 <p class="text-base">
                   E-Learning is one of the world's largest platforms for free
@@ -125,9 +167,17 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-8 border border-slate-300 pr-8">
-              <img src="./assets/course-4.png" alt="course-1" />
-              <div class="flex flex-col gap-4">
+            <div
+              class="flex items-center gap-8 border border-slate-300 pr-8 rounded max-sm:flex-col max-sm:p-0 max-sm:gap-4"
+            >
+              <img
+                src="./assets/course-4.png"
+                alt="course-1"
+                class="max-sm:w-full max-sm:h-52"
+              />
+              <div
+                class="flex flex-col gap-4 max-sm:gap-2 max-sm:pb-6 max-sm:px-4"
+              >
                 <h3 class="text-xl font-medium">Digital Marketing</h3>
                 <p class="text-base">
                   E-Learning is one of the world's largest platforms for free
@@ -137,9 +187,17 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-8 border border-slate-300 pr-8">
-              <img src="./assets/course-5.png" alt="course-1" />
-              <div class="flex flex-col gap-4">
+            <div
+              class="flex items-center gap-8 border border-slate-300 pr-8 rounded max-sm:flex-col max-sm:p-0 max-sm:gap-4"
+            >
+              <img
+                src="./assets/course-5.png"
+                alt="course-1"
+                class="max-sm:w-full max-sm:h-52"
+              />
+              <div
+                class="flex flex-col gap-4 max-sm:gap-2 max-sm:pb-6 max-sm:px-4"
+              >
                 <h3 class="text-xl font-medium">Photography Basic Rules</h3>
                 <p class="text-base">
                   E-Learning is one of the world's largest platforms for free
@@ -149,9 +207,17 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-8 border border-slate-300 pr-8">
-              <img src="./assets/course-6.png" alt="course-1" />
-              <div class="flex flex-col gap-4">
+            <div
+              class="flex items-center gap-8 border border-slate-300 pr-8 rounded max-sm:flex-col max-sm:p-0 max-sm:gap-4"
+            >
+              <img
+                src="./assets/course-6.png"
+                alt="course-1"
+                class="max-sm:w-full max-sm:h-52"
+              />
+              <div
+                class="flex flex-col gap-4 max-sm:gap-2 max-sm:pb-6 max-sm:px-4"
+              >
                 <h3 class="text-xl font-medium">Motion Graphics</h3>
                 <p class="text-base">
                   E-Learning is one of the world's largest platforms for free
@@ -186,7 +252,7 @@
               <div
                 class="accordion-heading flex justify-between items-center cursor-pointer"
               >
-                <h3 class="text-lg font-medium">
+                <h3 class="text-lg font-medium max-md:text-base">
                   1. Difference between Grid and Flex-Box.
                 </h3>
                 <img
@@ -212,7 +278,7 @@
               <div
                 class="accordion-heading flex justify-between items-center cursor-pointer"
               >
-                <h3 class="text-lg font-medium">
+                <h3 class="text-lg font-medium max-md:text-base">
                   2. Difference between bootstrap and tailwind.
                 </h3>
                 <img
@@ -241,7 +307,9 @@
               <div
                 class="accordion-heading flex justify-between items-center cursor-pointer"
               >
-                <h3 class="text-lg font-medium">3. What is css box-model?</h3>
+                <h3 class="text-lg font-medium max-md:text-base">
+                  3. What is css box-model?
+                </h3>
                 <img
                   class="w-4 accordion-icon"
                   src="./assets/down-arrow.svg"
@@ -267,7 +335,9 @@
               <div
                 class="accordion-heading flex justify-between items-center cursor-pointer"
               >
-                <h3 class="text-lg font-medium">4. What is semantic tag?</h3>
+                <h3 class="text-lg font-medium max-md:text-base">
+                  4. What is semantic tag?
+                </h3>
                 <img
                   class="w-4 accordion-icon"
                   src="./assets/down-arrow.svg"

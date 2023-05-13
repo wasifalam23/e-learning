@@ -5,8 +5,17 @@
 @layer base {
   :root {
     --color-primary: #f8f9fa;
+    --color-primary-deep: #c6c7c8;
     /* ... */
   }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav.active {
+  display: flex;
 }
 
 .accordion-icon {
