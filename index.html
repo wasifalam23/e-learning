@@ -9,22 +9,35 @@
   </head>
   <body>
     <div id="app">
+      <header class="bg-[--color-primary] py-4 sticky top-0">
+        <nav class="lg:container mx-auto px-12 flex items-center gap-8">
+          <h3 class="text-3xl font-semibold">E-Learning</h3>
+          <ul class="flex gap-6 mt-2">
+            <li><a class="text-lg text-slate-600" href="#">Home</a></li>
+            <li><a class="text-lg text-slate-600" href="#">Deals</a></li>
+            <li><a class="text-lg text-slate-600" href="#">About</a></li>
+            <li><a class="text-lg text-slate-600" href="#">Register</a></li>
+            <li><a class="text-lg text-slate-600" href="#">Success</a></li>
+          </ul>
+        </nav>
+      </header>
+
       <main class="lg:container mx-auto my-10 px-12">
         <!---------------------------- About ---------------------------->
         <section class="mb-12">
           <div
-            class="grid grid-cols-[40fr_60fr] gap-x-12 items-center bg-[--color-primary]"
+            class="grid grid-cols-[40fr_60fr] gap-x-12 items-center bg-[--color-primary] max-md:grid-cols-1 max-md:justify-items-center max-md:p-4"
           >
             <img
               src="./assets/working.png"
               alt="man is sitting with a laptop"
             />
 
-            <div class="pr-12">
-              <h1 class="text-5xl font-medium mb-6">
+            <div class="pr-12 max-lg:py-6 max-md:pr-4">
+              <h1 class="text-5xl font-medium mb-6 max-lg:text-4xl max-lg:mb-4">
                 Explore The elearning Institute
               </h1>
-              <p class="text-lg mb-6">
+              <p class="text-lg mb-6 max-lg:text-base max-lg:mb-4">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words which don't look even
@@ -32,20 +45,22 @@
                 Ipsum, you need to be sure
               </p>
 
-              <div class="flex justify-between mb-8">
-                <div class="flex flex-col gap-2">
-                  <span class="text-4xl font-medium">3.2K+</span>
-                  <p class="text-lg">Online Course</p>
+              <div class="flex justify-between mb-8 max-xl:mb-6">
+                <div class="flex flex-col gap-2 max-xl:gap-1">
+                  <span class="text-4xl font-medium max-lg:text-3xl"
+                    >3.2K+</span
+                  >
+                  <p class="text-lg max-lg:text-base">Online Course</p>
                 </div>
 
-                <div class="flex flex-col gap-2">
-                  <span class="text-4xl font-medium">600+</span>
-                  <p class="text-lg">Expert member</p>
+                <div class="flex flex-col gap-2 max-xl:gap-1">
+                  <span class="text-4xl font-medium max-lg:text-3xl">600+</span>
+                  <p class="text-lg max-lg:text-base">Expert member</p>
                 </div>
 
-                <div class="flex flex-col gap-2">
-                  <span class="text-4xl font-medium">1k+</span>
-                  <p class="text-lg">Rating & Review</p>
+                <div class="flex flex-col gap-2 max-xl:gap-1">
+                  <span class="text-4xl font-medium max-lg:text-3xl">1k+</span>
+                  <p class="text-lg max-lg:text-base">Rating & Review</p>
                 </div>
               </div>
 
@@ -59,20 +74,19 @@
         <!---------------------------- Courses ---------------------------->
         <section class="px-12 mb-12">
           <div class="text-center mb-8">
-            <h1 class="text-5xl font-medium mb-3">
+            <h1 class="text-5xl font-medium mb-3 max-lg:text-4xl">
               Discover Our Popular Courses
             </h1>
-            <p class="text-lg">
+            <p class="text-lg max-lg:text-base">
               Find Usa Online Courses at Shopwebly, the Website to Compare
-              Prices! Find and Compare Usa Online Courses Online. <br />
-              Save Now at Shopwebly! Compare Products. Many Products. Easy
-              Access. <br />
-              Search and Discover.
+              Prices! Find and Compare Usa Online Courses Online. Save Now at
+              Shopwebly! Compare Products. Many Products. Easy Access. Search
+              and Discover.
             </p>
           </div>
 
           <!-- Course Cards -->
-          <div class="grid grid-cols-2 gap-x-12 gap-8">
+          <div class="grid grid-cols-2 gap-x-12 gap-8 max-lg:grid-cols-1">
             <div class="flex items-center gap-8 border border-slate-300 pr-8">
               <img src="./assets/course-1.png" alt="course-1" />
               <div class="flex flex-col gap-4">
@@ -158,28 +172,30 @@
         <!---------------------------- FAQ ---------------------------->
         <section class="mb-12">
           <div class="text-center mb-10">
-            <h1 class="text-5xl font-medium mb-4">
+            <h1 class="text-5xl font-medium mb-4 max-lg:text-3xl">
               Frequently Asked Questions
             </h1>
-            <p class="text-lg">
+            <p class="text-lg max-lg:text-base">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </p>
           </div>
 
           <div class="border border-slate-300">
-            <div class="border-b border-b-slate-300 px-6 py-4">
-              <div class="flex justify-between items-center">
+            <div class="accordion-item border-b border-b-slate-300 px-6 py-4">
+              <div
+                class="accordion-heading flex justify-between items-center cursor-pointer"
+              >
                 <h3 class="text-lg font-medium">
                   1. Difference between Grid and Flex-Box.
                 </h3>
                 <img
-                  class="w-4"
+                  class="w-4 accordion-icon"
                   src="./assets/down-arrow.svg"
                   alt="down-arrow"
                 />
               </div>
-              <div class="hidden">
+              <div class="accordion-content p-4 pt-8">
                 <p>
                   The basic difference between CSS Grid Layout and CSS Flexbox
                   Layout is that flexbox was designed for layout in one
@@ -192,18 +208,20 @@
               </div>
             </div>
 
-            <div class="border-b border-b-slate-300 px-6 py-4">
-              <div class="flex justify-between items-center">
+            <div class="accordion-item border-b border-b-slate-300 px-6 py-4">
+              <div
+                class="accordion-heading flex justify-between items-center cursor-pointer"
+              >
                 <h3 class="text-lg font-medium">
                   2. Difference between bootstrap and tailwind.
                 </h3>
                 <img
-                  class="w-4"
+                  class="w-4 accordion-icon"
                   src="./assets/down-arrow.svg"
                   alt="down-arrow"
                 />
               </div>
-              <div class="hidden">
+              <div class="accordion-content p-4 pt-8">
                 <p>
                   Bootstrap comes with a set of pre-styled responsive,
                   mobile-first components that possess a definite UI kit.
@@ -219,16 +237,18 @@
               </div>
             </div>
 
-            <div class="border-b border-b-slate-300 px-6 py-4">
-              <div class="flex justify-between items-center">
+            <div class="accordion-item border-b border-b-slate-300 px-6 py-4">
+              <div
+                class="accordion-heading flex justify-between items-center cursor-pointer"
+              >
                 <h3 class="text-lg font-medium">3. What is css box-model?</h3>
                 <img
-                  class="w-4"
+                  class="w-4 accordion-icon"
                   src="./assets/down-arrow.svg"
                   alt="down-arrow"
                 />
               </div>
-              <div class="hidden">
+              <div class="accordion-content p-4 pt-8">
                 <p>
                   In CSS, the term "box model" is used when talking about design
                   and layout. The CSS box model is essentially a box that wraps
@@ -243,16 +263,18 @@
               </div>
             </div>
 
-            <div class="px-6 py-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-medium">1. What is semantic tag?</h3>
+            <div class="accordion-item border-b border-b-slate-300 px-6 py-4">
+              <div
+                class="accordion-heading flex justify-between items-center cursor-pointer"
+              >
+                <h3 class="text-lg font-medium">4. What is semantic tag?</h3>
                 <img
-                  class="w-4"
+                  class="w-4 accordion-icon"
                   src="./assets/down-arrow.svg"
                   alt="down-arrow"
                 />
               </div>
-              <div class="hidden">
+              <div class="accordion-content p-4 pt-8">
                 <p>
                   The HTML semantics refers to the tags that provide meaning to
                   an HTML page rather than just presentation.It makes HTML more
@@ -270,7 +292,7 @@
         </section>
 
         <!---------------------------- Trust ---------------------------->
-        <section class="mb-12">
+        <section class="mb-12 max-lg:hidden">
           <div class="text-center mb-4">
             <h1 class="text-5xl font-medium mb-4">
               Trusted by over 800+ companies
@@ -288,6 +310,6 @@
         </section>
       </main>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
