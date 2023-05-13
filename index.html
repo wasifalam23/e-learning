@@ -10,8 +10,54 @@
   <body>
     <div id="app">
       <main class="lg:container mx-auto my-10 px-12">
+        <!---------------------------- About ---------------------------->
+        <section class="mb-12">
+          <div
+            class="grid grid-cols-[40fr_60fr] gap-x-12 items-center bg-[--color-primary]"
+          >
+            <img
+              src="./assets/working.png"
+              alt="man is sitting with a laptop"
+            />
+
+            <div class="pr-12">
+              <h1 class="text-5xl font-medium mb-6">
+                Explore The elearning Institute
+              </h1>
+              <p class="text-lg mb-6">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure
+              </p>
+
+              <div class="flex justify-between mb-8">
+                <div class="flex flex-col gap-2">
+                  <span class="text-4xl font-medium">3.2K+</span>
+                  <p class="text-lg">Online Course</p>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <span class="text-4xl font-medium">600+</span>
+                  <p class="text-lg">Expert member</p>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <span class="text-4xl font-medium">1k+</span>
+                  <p class="text-lg">Rating & Review</p>
+                </div>
+              </div>
+
+              <button class="bg-blue-500 px-5 py-2 rounded text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+        </section>
+
         <!---------------------------- Courses ---------------------------->
-        <section class="px-12">
+        <section class="px-12 mb-12">
           <div class="text-center mb-8">
             <h1 class="text-5xl font-medium mb-3">
               Discover Our Popular Courses
@@ -24,6 +70,7 @@
               Search and Discover.
             </p>
           </div>
+
           <!-- Course Cards -->
           <div class="grid grid-cols-2 gap-x-12 gap-8">
             <div class="flex items-center gap-8 border border-slate-300 pr-8">
@@ -105,6 +152,138 @@
             <button class="bg-blue-500 text-white py-2 px-6 rounded text-lg">
               See More Courses
             </button>
+          </div>
+        </section>
+
+        <!---------------------------- FAQ ---------------------------->
+        <section class="mb-12">
+          <div class="text-center mb-10">
+            <h1 class="text-5xl font-medium mb-4">
+              Frequently Asked Questions
+            </h1>
+            <p class="text-lg">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+
+          <div class="border border-slate-300">
+            <div class="border-b border-b-slate-300 px-6 py-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-medium">
+                  1. Difference between Grid and Flex-Box.
+                </h3>
+                <img
+                  class="w-4"
+                  src="./assets/down-arrow.svg"
+                  alt="down-arrow"
+                />
+              </div>
+              <div class="hidden">
+                <p>
+                  The basic difference between CSS Grid Layout and CSS Flexbox
+                  Layout is that flexbox was designed for layout in one
+                  dimension - either a row or a column. Grid was designed for
+                  two-dimensional layout - rows, and columns at the same time.
+                  The two specifications share some common features, however,
+                  and if you have already learned how to use flexbox, the
+                  similarities should help you get to grips with Grid.
+                </p>
+              </div>
+            </div>
+
+            <div class="border-b border-b-slate-300 px-6 py-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-medium">
+                  2. Difference between bootstrap and tailwind.
+                </h3>
+                <img
+                  class="w-4"
+                  src="./assets/down-arrow.svg"
+                  alt="down-arrow"
+                />
+              </div>
+              <div class="hidden">
+                <p>
+                  Bootstrap comes with a set of pre-styled responsive,
+                  mobile-first components that possess a definite UI kit.
+                  Tailwind CSS uses a set of utility classes to create a neat UI
+                  with more flexibility and uniqueness. Sites created using
+                  Bootstrap follow the generic pattern that makes them look
+                  identical.The significant difference between Tailwind CSS and
+                  Bootstrap is that Tailwind offers predesigned widgets to build
+                  a site from scratch with fast UI development, while Bootstrap
+                  comes with a set of pre-styled responsive, mobile-first
+                  components that possess a definite UI kit.
+                </p>
+              </div>
+            </div>
+
+            <div class="border-b border-b-slate-300 px-6 py-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-medium">3. What is css box-model?</h3>
+                <img
+                  class="w-4"
+                  src="./assets/down-arrow.svg"
+                  alt="down-arrow"
+                />
+              </div>
+              <div class="hidden">
+                <p>
+                  In CSS, the term "box model" is used when talking about design
+                  and layout. The CSS box model is essentially a box that wraps
+                  around every HTML element.The CSS box model is a container
+                  that contains multiple properties including borders, margin,
+                  padding, and the content itself. It is used to create the
+                  design and layout of web pages. It can be used as a toolkit
+                  for customizing the layout of different elements. The web
+                  browser renders every element as a rectangular box according
+                  to the CSS box model.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-6 py-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-medium">1. What is semantic tag?</h3>
+                <img
+                  class="w-4"
+                  src="./assets/down-arrow.svg"
+                  alt="down-arrow"
+                />
+              </div>
+              <div class="hidden">
+                <p>
+                  The HTML semantics refers to the tags that provide meaning to
+                  an HTML page rather than just presentation.It makes HTML more
+                  comprehensible by better defining the different sections and
+                  layout of web pages.A semantic element clearly describes its
+                  meaning to both the browser and the developer.By adding
+                  semantic tags to your document, you provide additional
+                  information about that document, which aids in communication.
+                  Specifically, semantic tags make it clear to the browser what
+                  the meaning of a page and its content is.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!---------------------------- Trust ---------------------------->
+        <section class="mb-12">
+          <div class="text-center mb-4">
+            <h1 class="text-5xl font-medium mb-4">
+              Trusted by over 800+ companies
+            </h1>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <img src="./assets/company-1.png" alt="coursera-logo" />
+            <img src="./assets/company-2.png" alt="udemy-logo" />
+            <img src="./assets/company-3.png" alt="FedEx-logo" />
+            <img src="./assets/company-4.png" alt="education-logo" />
+            <img src="./assets/company-5.png" alt="elecom-logo" />
+            <img src="./assets/company-6.png" alt="indeed-logo" />
           </div>
         </section>
       </main>
